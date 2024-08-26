@@ -609,7 +609,7 @@ uint8_t syn6658_set_synthesis_speed(syn6658_handle_t *handle, uint8_t speed);
  * @param[in] speaker is the synthesis speaker
  * @return    status code
  *            - 0 success
- *            - 1 set synthesis speed failed
+ *            - 1 set synthesis speaker failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
  * @note      none

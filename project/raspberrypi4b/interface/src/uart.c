@@ -110,6 +110,14 @@ static uint8_t a_uart_config(int fd, uint32_t baud_rate, uint8_t data_bits, char
             break;
         }
         
+        /* 57600bps */
+        case 57600 :
+        {
+            speed = B57600;
+            
+            break;
+        }
+
         /* 115200bps */
         case 115200 :
         {

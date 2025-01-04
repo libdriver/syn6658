@@ -40,7 +40,7 @@ static syn6658_handle_t gs_handle;        /**< syn6658 handle */
 
 /**
  * @brief     basic example init
- * @param[in] interface is the chip interface
+ * @param[in] interface chip interface
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -131,7 +131,7 @@ uint8_t syn6658_basic_init(syn6658_interface_t interface)
 
 /**
  * @brief     basic example synthesis
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @return    status code
  *            - 0 success
  *            - 1 synthesis failed
@@ -300,8 +300,8 @@ uint8_t syn6658_basic_wake_up(void)
 
 /**
  * @brief     basic example save text
- * @param[in] offset is the buffer offset
- * @param[in] *text points to a text buffer
+ * @param[in] offset buffer offset
+ * @param[in] *text pointer to a text buffer
  * @return    status code
  *            - 0 success
  *            - 1 save text failed
@@ -321,8 +321,8 @@ uint8_t syn6658_basic_save_text(uint8_t offset, char *text)
 
 /**
  * @brief     basic example play text
- * @param[in] times is the play times
- * @param[in] type is the encode type
+ * @param[in] times play times
+ * @param[in] type encode type
  * @return    status code
  *            - 0 success
  *            - 1 play text failed

@@ -51,8 +51,8 @@
 
 /**
  * @brief     check busy
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] timeout is the timeout in ms
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] timeout timeout in ms
  * @return    status code
  *            - 0 success
  *            - 1 timeout or gpio read failed
@@ -81,9 +81,9 @@ static uint8_t a_check_busy(syn6658_handle_t *handle, uint32_t timeout)
 
 /**
  * @brief     write data
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the buffer length
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -127,9 +127,9 @@ static uint8_t a_write(syn6658_handle_t *handle, uint8_t *buf, uint16_t len)
 
 /**
  * @brief      read data
- * @param[in]  *handle points to a syn6658 handle structure
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the buffer length
+ * @param[in]  *handle pointer to a syn6658 handle structure
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -167,8 +167,8 @@ static uint16_t a_read(syn6658_handle_t *handle, uint8_t *buf, uint16_t len)
 
 /**
  * @brief     set the chip interface
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] interface is the chip interface
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] interface chip interface
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -188,8 +188,8 @@ uint8_t syn6658_set_interface(syn6658_handle_t *handle, syn6658_interface_t inte
 
 /**
  * @brief      get the chip interface
- * @param[in]  *handle points to a syn6658 handle structure
- * @param[out] *interface points to a chip interface buffer
+ * @param[in]  *handle pointer to a syn6658 handle structure
+ * @param[out] *interface pointer to a chip interface buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -209,7 +209,7 @@ uint8_t syn6658_get_interface(syn6658_handle_t *handle, syn6658_interface_t *int
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a syn6658 handle structure
+ * @param[in] *handle pointer to a syn6658 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 uart or spi initialization failed
@@ -340,7 +340,7 @@ uint8_t syn6658_init(syn6658_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a syn6658 handle structure
+ * @param[in] *handle pointer to a syn6658 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 uart or spi deinit failed
@@ -391,8 +391,8 @@ uint8_t syn6658_deinit(syn6658_handle_t *handle)
 
 /**
  * @brief      get the current status
- * @param[in]  *handle points to a syn6658 handle structure
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to a syn6658 handle structure
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get status failed
@@ -496,7 +496,7 @@ uint8_t syn6658_get_status(syn6658_handle_t *handle, syn6658_status_t *status)
 
 /**
  * @brief     stop the chip
- * @param[in] *handle points to a syn6658 handle structure
+ * @param[in] *handle pointer to a syn6658 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop failed
@@ -561,7 +561,7 @@ uint8_t syn6658_stop(syn6658_handle_t *handle)
 
 /**
  * @brief     pause the chip
- * @param[in] *handle points to a syn6658 handle structure
+ * @param[in] *handle pointer to a syn6658 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 pause failed
@@ -627,7 +627,7 @@ uint8_t syn6658_pause(syn6658_handle_t *handle)
 
 /**
  * @brief     resume the chip
- * @param[in] *handle points to a syn6658 handle structure
+ * @param[in] *handle pointer to a syn6658 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 resume failed
@@ -692,7 +692,7 @@ uint8_t syn6658_resume(syn6658_handle_t *handle)
 
 /**
  * @brief     set the chip to standby mode
- * @param[in] *handle points to a syn6658 handle structure
+ * @param[in] *handle pointer to a syn6658 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 standby failed
@@ -757,7 +757,7 @@ uint8_t syn6658_standby(syn6658_handle_t *handle)
 
 /**
  * @brief     wake up the chip
- * @param[in] *handle points to a syn6658 handle structure
+ * @param[in] *handle pointer to a syn6658 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 wake up failed
@@ -830,8 +830,8 @@ uint8_t syn6658_wake_up(syn6658_handle_t *handle)
 
 /**
  * @brief     set the chip text type
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] type is the chip text type
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] type chip text type
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -856,8 +856,8 @@ uint8_t syn6658_set_text_type(syn6658_handle_t *handle, syn6658_type_t type)
 
 /**
  * @brief      get the chip text type
- * @param[in]  *handle points to a syn6658 handle structure
- * @param[out] *type points to a chip text type
+ * @param[in]  *handle pointer to a syn6658 handle structure
+ * @param[out] *type pointer to a chip text type
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -882,8 +882,8 @@ uint8_t syn6658_get_text_type(syn6658_handle_t *handle, syn6658_type_t *type)
 
 /**
  * @brief     synthesis the test
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] fmt is the format data
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] fmt format data
  * @return    status code
  *            - 0 success
  *            - 1 synthesis text failed
@@ -966,8 +966,8 @@ uint8_t syn6658_synthesis_text(syn6658_handle_t *handle, const char *const fmt, 
 
 /**
  * @brief     set the chip synthesis volume
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] volume is the synthesis volume
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] volume synthesis volume
  * @return    status code
  *            - 0 success
  *            - 1 set synthesis volume failed
@@ -1007,8 +1007,8 @@ uint8_t syn6658_set_synthesis_volume(syn6658_handle_t *handle, uint8_t volume)
 
 /**
  * @brief     set the synthesis speed
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] speed is the synthesis speed
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] speed synthesis speed
  * @return    status code
  *            - 0 success
  *            - 1 set synthesis speed failed
@@ -1048,8 +1048,8 @@ uint8_t syn6658_set_synthesis_speed(syn6658_handle_t *handle, uint8_t speed)
 
 /**
  * @brief     set the synthesis speaker
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] speaker is the synthesis speaker
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] speaker synthesis speaker
  * @return    status code
  *            - 0 success
  *            - 1 set synthesis speaker failed
@@ -1082,9 +1082,9 @@ uint8_t syn6658_set_synthesis_speaker(syn6658_handle_t *handle, syn6658_speaker_
 
 /**
  * @brief     save text to the buffer
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] offset is the buffer offset
- * @param[in] *text points to a text buffer
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] offset buffer offset
+ * @param[in] *text pointer to a text buffer
  * @return    status code
  *            - 0 success
  *            - 1 save text failed
@@ -1135,9 +1135,9 @@ uint8_t syn6658_save_text(syn6658_handle_t *handle, uint8_t offset, char *text)
 
 /**
  * @brief     play text
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] times is the play times
- * @param[in] type is the encode type
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] times play times
+ * @param[in] type encode type
  * @return    status code
  *            - 0 success
  *            - 1 play text failed
@@ -1181,11 +1181,11 @@ uint8_t syn6658_play_text(syn6658_handle_t *handle, uint8_t times, syn6658_type_
 
 /**
  * @brief     send the command with arg to the chip
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] command is the set command
- * @param[in] param is the set param
- * @param[in] *txt points to a txt buffer
- * @param[in] timeout is the timeout in ms
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] command set command
+ * @param[in] param set param
+ * @param[in] *txt pointer to a txt buffer
+ * @param[in] timeout timeout in ms
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -1269,9 +1269,9 @@ uint8_t syn6658_set_command_with_arg(syn6658_handle_t *handle, uint8_t command, 
 
 /**
  * @brief     send the command to the chip
- * @param[in] *handle points to a syn6658 handle structure
- * @param[in] command is the set command
- * @param[in] timeout is the timeout in ms
+ * @param[in] *handle pointer to a syn6658 handle structure
+ * @param[in] command set command
+ * @param[in] timeout timeout in ms
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -1344,7 +1344,7 @@ uint8_t syn6658_set_command(syn6658_handle_t *handle, uint8_t command, uint32_t 
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a syn6658 info structure
+ * @param[out] *info pointer to a syn6658 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

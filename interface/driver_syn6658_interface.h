@@ -70,8 +70,8 @@ uint8_t syn6658_interface_uart_deinit(void);
 
 /**
  * @brief      interface uart read
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the length of the data buffer
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -81,8 +81,8 @@ uint16_t syn6658_interface_uart_read(uint8_t *buf, uint16_t len);
 
 /**
  * @brief     interface uart write
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of the data buffer
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of the data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -119,9 +119,9 @@ uint8_t syn6658_interface_spi_deinit(void);
 
 /**
  * @brief      interface spi transmit
- * @param[in]  *tx points to a tx data buffer
- * @param[out] *rx points to a rx data buffer
- * @param[in]  len is the length of the data buffer
+ * @param[in]  *tx pointer to a tx data buffer
+ * @param[out] *rx pointer to a rx data buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 transmit failed
@@ -149,7 +149,7 @@ uint8_t syn6658_interface_gpio_ready_deinit(void);
 
 /**
  * @brief      interface gpio ready read
- * @param[out] *value points to a value buffer
+ * @param[out] *value pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -159,14 +159,14 @@ uint8_t syn6658_interface_gpio_ready_read(uint8_t *value);
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void syn6658_interface_delay_ms(uint32_t ms);
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void syn6658_interface_debug_print(const char *const fmt, ...);

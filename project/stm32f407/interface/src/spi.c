@@ -39,7 +39,7 @@
 
 /**
  * @brief     swap data
- * @param[in] data is the input data
+ * @param[in] data input data
  * @return    output data
  * @note      none
  */
@@ -99,7 +99,7 @@ static uint8_t a_spi_cs_init(void)
 
 /**
  * @brief     spi bus init
- * @param[in] mode is the spi mode
+ * @param[in] mode spi mode
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -152,9 +152,9 @@ uint8_t spi_deinit(void)
 
 /**
  * @brief      spi transmit
- * @param[in]  *tx points to a tx buffer
- * @param[out] *rx points to a rx buffer
- * @param[in]  len is the length of the data buffer
+ * @param[in]  *tx pointer to a tx buffer
+ * @param[out] *rx pointer to a rx buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 transmit failed

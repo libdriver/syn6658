@@ -10,7 +10,7 @@
 
 SYN6658 Chinese speech synthesis chip is a high-end speech synthesis chip with higher cost-effectiveness and more natural effects, newly launched by Beijing Yuyin Tianxia Technology Co., Ltd. in 2012. SYN6658 receives text data to be synthesized through UART or SPI interface communication, achieving text to speech (or TTS speech) conversion. The latest SYN6658 speech synthesis chip launched by the company inherits the excellent features of OSYNO6188 and SYN6288 speech chips: small-sized patch packaging, simple hardware interface, low power consumption, clear and round tone, and extremely high cost-effectiveness; In addition, SYN6658 has made text/number/string recognition more intelligent and accurate, and the naturalness of speech synthesis has been greatly improved. SYN6658 has achieved a qualitative leap in speech synthesis performance and intelligence, making it a truly high-end Chinese speech synthesis chip for industry applications.
 
-LibDriver SYN6658 is the full function driver of SYN6658 launched by LibDriver.It provides text synthesis, sound synthesis and other functions. LibDriver is MISRA compliant.
+LibDriver SYN6658 is a full-featured driver of SYN6658 launched by LibDriver.It provides text synthesis, sound synthesis and other functions. LibDriver is MISRA compliant.
 
 ### Table of Contents
 

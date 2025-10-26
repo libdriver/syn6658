@@ -62,19 +62,19 @@ We use '\n' to wrap lines.If your serial port assistant displays exceptions (e.g
    syn6658 (-p | --port)
    ```
 
-5. Run syn6658 synthesis test.
+4. Run syn6658 synthesis test.
 
    ```shell
    syn6658 (-t syn | --test=syn) --interface=<uart | spi> 
    ```
 
-6. Run syn6658 synthesis text function, gb2312 format is gb2312.
+5. Run syn6658 synthesis text function, gb2312 format is gb2312.
 
    ```shell
    syn6658 (-e syn | --example=syn) --interface=<uart | spi> --text=<gb2312>
    ```
 
-7. Run syn6658 save text function, index is the saved index and it's range is 0 - 15, gb2312 format is gb2312.
+6. Run syn6658 save text function, index is the saved index and it's range is 0 - 15, gb2312 format is gb2312.
 
    ```shell
    syn6658 (-e save| --example=save) --interface=<uart | spi> --index=<index> --text=<gb2312>

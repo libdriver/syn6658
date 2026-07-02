@@ -247,7 +247,7 @@ typedef struct syn6658_handle_s
     uint8_t inited;                                                         /**< inited flag */
     uint8_t uart_spi;                                                       /**< uart_spi flag */
     uint8_t type;                                                           /**< type */
-    uint8_t buf[4096];                                                      /**< frame buf */
+    uint8_t buf[4096 + 5];                                                  /**< frame buf */
 } syn6658_handle_t;
 
 /**

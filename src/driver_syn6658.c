@@ -911,9 +911,9 @@ uint8_t syn6658_synthesis_text(syn6658_handle_t *handle, const char *const fmt, 
         return 3;                                                         /* return error */
     }
 
-    memset((char *)(handle->buf + 5), 0, sizeof(char) * 4091);            /* clear buffer */
+    memset((char *)(handle->buf + 5), 0, sizeof(char) * 4096);            /* clear buffer */
     va_start(args, fmt);                                                  /* var start */
-    (void)vsnprintf((char *)(handle->buf + 5), 4091, 
+    (void)vsnprintf((char *)(handle->buf + 5), 4096, 
                    (char const *)fmt, args);                              /* print to buffer */
     va_end(args);                                                         /* var end */
     len = (uint16_t)strlen((const char *)(handle->buf + 5));              /* get length of txt */
@@ -1213,7 +1213,7 @@ uint8_t syn6658_set_command_with_arg(syn6658_handle_t *handle, uint8_t command, 
     }
 
     len = (uint16_t)strlen(txt);                                          /* get length of txt */
-    if (len > 4091)                                                       /* check result */
+    if (len > 4096)                                                       /* check result */
     {
         handle->debug_print("syn6658: txt is too long.\n");               /* txt is too long */
 

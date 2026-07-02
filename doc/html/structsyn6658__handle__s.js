@@ -1,6 +1,6 @@
 var structsyn6658__handle__s =
 [
-    [ "buf", "structsyn6658__handle__s.html#a63dcfdd4a3a0ced2567e07b0aba23640", null ],
+    [ "buf", "structsyn6658__handle__s.html#aa2a14bd4c44718778134926e440922c2", null ],
     [ "debug_print", "structsyn6658__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b", null ],
     [ "delay_ms", "structsyn6658__handle__s.html#a406c9433252b7366de417b7a60915c81", null ],
     [ "gpio_ready_deinit", "structsyn6658__handle__s.html#ab7a8bec87952f5d0367d5354c3c9cde9", null ],

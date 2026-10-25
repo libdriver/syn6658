@@ -1,3 +1,9 @@
+## 1.0.8 (2026-10-25)
+
+## Bug Fixes
+
+- fix buffer bugs
+
 ## 1.0.7 (2026-07-03)
 
 ## Bug Fixes
